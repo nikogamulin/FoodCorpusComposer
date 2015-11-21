@@ -47,7 +47,7 @@ Iteration 59:
 ```----- Generating with seed: "m from the supermark"
 m from the supermarket and the engh the skis  the make some crample to make sore very cricky and stirf -  and bust of salt of the poplice in there.  so i'll see how a bit more haver  and it's like beired ticked i've fold be kind of salt  it to tastes now and thi```
 
-Obviously there isn't enough data been collected so far from the subtitles to imitate Jamie Oliver although the recurrent network learned to compose sentences, which mention food.
+Obviously there hasn't been enough data collected so far from the subtitles to imitate Jamie Oliver although the recurrent network learned to compose sentences, which mention food.
 
 ##Using the model trained on larger corpus
 
