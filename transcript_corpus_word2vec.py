@@ -33,7 +33,7 @@ def queryModels(q, model):
     print '----------'
 
 if __name__ == "__main__":
-    modelCom = getWord2Vec("./data/recipes_vec.bin")
+    modelCom = getWord2Vec("./data/recipes_phrases.bin", True)
 
     queryModels('orange', modelCom)
     queryModels('lemon', modelCom)

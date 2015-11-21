@@ -8,8 +8,8 @@ from transcript_corpus_word2vec import getWord2Vec
 
 ignoredIndices = []
 
-model = getWord2Vec("./data/recipes_vec.bin")
-testTitles = ['orange', 'chocolate', 'butter', 'lemon', 'milk']
+model = getWord2Vec("./data/recipes_phrases.bin", True)
+testTitles = ['lime', 'lemon', 'oranges', 'turkey', 'chicken', 'pasta', 'noodles', 'rice', 'beef']
 testVectors = []
 for i, title in enumerate(testTitles):
     vectorWords = title.split(', ')
@@ -28,7 +28,7 @@ for i, title in enumerate(testTitles):
         testVectors.append([0] * 50)
     else:
         testVectors.append(result.tolist())
-        
+
 testVectorsArray = np.array(testVectors)
 
 modelTSNE = TSNE(n_components=2, random_state=0)
