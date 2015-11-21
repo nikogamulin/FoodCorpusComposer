@@ -85,7 +85,7 @@ The crucial part of AI task is to collect the learning data and this step turns 
 Consider food just as an example. Similarly, a good transcript parser could be used to generate a multilingual corpus which could be useful for translation, the dialogs from series could be used to emulate specific character responses to your SMS messages or emails etc.
 
 ####Main objectives:
-⋅⋅* Create crawlers to simplify the retrieval of transcript/subtitles files
-⋅⋅* Create mechanism to label the trascript dialogs with speaking characters
-⋅⋅* Create a generic solution which could be applied to create a corpus for arbitrary domain
+* Create crawlers to simplify the retrieval of transcript/subtitles files
+* Create mechanism to label the trascript dialogs with speaking characters
+* Create a generic solution which could be applied to create a corpus for arbitrary domain
 
