@@ -1,4 +1,4 @@
-import os, shutil, re, files
+import os, re
 import glob
 
 CORPUS_FILE = './data/corpus.txt'
@@ -7,19 +7,14 @@ def converttotxt():
     """
     Compose a corpus file for later usage in transcript_corpus_word2vec
     """
-    destfolder = "./data/cleaned_txt"
     sourceFolder = "./data/subtitles"
-    if not os.path.exists(destfolder):
-        os.mkdir(destfolder)
     filenames = glob.glob(sourceFolder + "/*.srt")
     for subtitlesFile in filenames:
-        destFileRoot = subtitlesFile.replace(sourceFolder, "")[0:-4]
-        dest = "%s%s.txt" % (destfolder, destFileRoot)
-        content = cleanup(subtitlesFile, dest, purgenewlines = True, lowercase = True)
+        content = cleanup(subtitlesFile, purgenewlines = True, lowercase = True)
         with open(CORPUS_FILE,'a+') as f: f.write(content)
     return
 
-def cleanup(src, dest, purgenewlines = True, lowercase = True):
+def cleanup(src, purgenewlines = True, lowercase = True):
     """
     remove extraneous characters/information from the subtitle files
     this got REALLY slow at one point and I'm not sure why, but it can be fixed by commenting stuff out of the loop
@@ -55,15 +50,17 @@ def cleanup(src, dest, purgenewlines = True, lowercase = True):
         return content
 
 def getCorpus(existing=False):
+    dir = os.path.dirname(__file__)
+    corpusFilename = os.path.join(dir, CORPUS_FILE)
     if not existing:
         #delete existing corpus file and create a new one
         try:
-            os.remove(CORPUS_FILE)
+            os.remove(corpusFilename)
         except:
             print "The corpus file doesn't exist"
         converttotxt()
 
-    f= open(CORPUS_FILE, 'r')
+    f= open(corpusFilename, 'r')
     corpus = f.read()
     return corpus
 
