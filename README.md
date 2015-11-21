@@ -4,7 +4,7 @@
 Generate corpus from cooking episodes subtitles
 
 ##Current Data
-The subtitles files are included in data/subtitles folder. The current data does not suffice to create relevant word vector. Nevertheless you can run the project to generate test vectors and visualize them using t-SNE
+The subtitles of The Naked Chef episodes are included in data/subtitles folder. The current data does not suffice to create relevant word vector. Nevertheless you can run the project to generate test vectors and visualize them using t-SNE
 
 
 ##How to use the code
