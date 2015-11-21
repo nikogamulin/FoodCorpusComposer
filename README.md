@@ -22,6 +22,7 @@ To visualize the vectors, just clone the repo and run ```python food_visualizati
 Iteration 1:
 ```----- Generating with seed: "oking  i can't think"
 oking  i can't think ore rt rto or rnr ee rre rt tne rrr rr on tre rot  oee rte rr oe rrrrl ee n ote  orte  torn oe trre t ore rrr tt rre rte ror trr on te te rrrt te nr oe rer rrr ter rrre rnr er nrrt ort o rt ree tr to tre ert re ner orr ryo rr on tt ite rrnn rrt nrr trr rre rt rr et rne rtr ot ror rtr oe rr aro  ote tr on otr ntr ta rtt e oor  tth rte rertr rrn rn orr on ry tse ortr rt ot ror rrrl ne rrr rtt rrer```
+
 Iteration 23:
 ```----- Generating with seed: "they're absolutely f"
 they're absolutely fantastic serad to do is that they really - so what i deen things like that  and i think that and that i've got this preat of chucken -  you can use that comeanous cos it us  i just think it all togst they really flavours of alave olive oil and i just werl chiffer  and then like that -  the gerl come of chocolate thing cold in and just star it all togsthings llave that in the over - lovely.  that t```
