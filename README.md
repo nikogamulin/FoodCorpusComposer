@@ -8,12 +8,13 @@ The subtitles files are included in data/subtitles folder. The current data does
 
 
 ##How to use the code
-To visualize the vectors, just clone the repo and run python food_visualization.py
+To visualize the vectors, just clone the repo and run '''python food_visualization.py'''
 
 ###Code description
-####subtitles_corpus_composer.py contains the code for creating a corpus .txt file from subtitles files included in data/subtitles folder
-####transcript_corpus_word2vec.py contains the code for learning word representation vectors from corpus file using gensim library
-####food_visualization.py contains the demo code for visualizing food items vectors represented in 2D space using t_SNE
+'''subtitles_corpus_composer.py''' contains the code for creating a corpus .txt file from subtitles files included in data/subtitles folder
+'''transcript_corpus_word2vec.py''' contains the code for learning word representation vectors from corpus file using gensim library
+'''test/food_visualization.py''' contains the demo code for visualizing food items vectors represented in 2D space using t_SNE
+'''test/lstm_text_generation.py''' is an example of LSTM recurrent NN from keras library which learns to generate text from corpus
 
 
 ###Invitation to cooperation
